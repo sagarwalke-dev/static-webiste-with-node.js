@@ -33,7 +33,7 @@ http.createServer(function (req, res) {
     // res.end();
 
 
-}).listen(5050);
-console.log('http://localhost:5050/');
+}).listen(process.env.PORT || 3000);
+console.log('Running on'+process.env.PORT);
 
 
